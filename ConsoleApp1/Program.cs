@@ -28,15 +28,11 @@ namespace ConsoleApp1
             Speicher speicher1 = new Speicher("500GB Samsung 970 evo Plus", 500, "M.2", 99.99);
             Speicher speicher2 = new Speicher("1000GB Samsung 860 Qvo", 1000, "SSD", 94.99);
 
-            Computer pc1 = new Computer();
+            Computer pc1 = new Computer(cpu1, psu1, gpu1, cooler1, mobo1);
 
-            pc1.gpuList.Add(gpu1);
-            pc1.cpuList.Add(cpu1);
-            pc1.psuList.Add(psu1);
-            pc1.ramList.Add(ram1);
-            pc1.coolerList.Add(cooler1);
-            pc1.moboList.Add(mobo1);
-            pc1.speicherList.Add(speicher1);
+            pc1.printComp();
+
+            
         }
     }
 }
