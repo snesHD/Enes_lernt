@@ -37,8 +37,6 @@ namespace ConsoleApp1
             pc1.coolerList.Add(cooler1);
             pc1.moboList.Add(mobo1);
             pc1.speicherList.Add(speicher1);
-
-            
         }
     }
 }
