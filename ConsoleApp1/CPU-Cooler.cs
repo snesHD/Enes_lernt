@@ -22,20 +22,28 @@ namespace ConsoleApp1
             set { kühler_hersteller = value; }
         }
 
-        private bool kühler_L_W;
+        private bool kühler_wasser;
 
-        public bool Kühler_L_W
+        public bool Kühler_wasser
         {
-            get { return kühler_L_W; }
-            set { kühler_L_W = value; }
+            get { return kühler_wasser; }
+            set { kühler_wasser = value; }
         }
 
-        private int kühler_preis;
+        private double kühler_preis;
 
-        public int Kühler_preis
+        public double Kühler_preis
         {
             get { return kühler_preis; }
             set { kühler_preis = value; }
+        }
+
+        public CPU_Cooler(string kühlerbezeichnung, string kühler_hersteller, bool kühler_wasser, double kühler_preis)
+        {
+            this.kühlerbezeichnung = kühlerbezeichnung;
+            this.kühler_hersteller = Kühler_hersteller;
+            this.kühler_wasser = kühler_wasser;
+            this.kühler_preis = kühler_preis;
         }
     }
 }

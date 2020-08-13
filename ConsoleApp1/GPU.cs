@@ -22,10 +22,9 @@ namespace ConsoleApp1
             set { gpu_chipbezeichnung = value; }
         }
 
-
         private string gpu_hersteller;
 
-        public string Gpu_Hersteller
+        public string Gpu_hersteller
         {
             get { return gpu_hersteller; }
             set { gpu_hersteller = value; }
@@ -38,5 +37,14 @@ namespace ConsoleApp1
             get { return gpu_preis; }
             set { gpu_preis = value; }
         }
+
+        public GPU(string gpu_name, string gpu_chipbezeichnung, string gpu_hersteller, double gpu_preis)
+        {
+            this.gpu_name = gpu_name;
+            this.gpu_chipbezeichnung = gpu_chipbezeichnung;
+            this.gpu_hersteller = gpu_hersteller;
+            this.gpu_preis = gpu_preis;
+        }
+
     }
 }

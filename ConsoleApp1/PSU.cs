@@ -37,6 +37,15 @@ namespace ConsoleApp1
             get { return psu_preis; }
             set { psu_preis = value; }
         }
+
+        public PSU(string psu_bezeichnung, string psu_hersteller, int psu_leistung, double psu_preis)
+        {
+            this.psu_bezeichnung = psu_bezeichnung;
+            this.psu_hersteller = psu_hersteller;
+            this.psu_leistung = psu_leistung;
+            this.psu_preis = psu_preis;
+        }
+
     }
 }
 

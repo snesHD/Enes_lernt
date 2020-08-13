@@ -6,13 +6,22 @@ namespace ConsoleApp1
 {
     class Motherboard
     {
-        private int mobo_bezeichnung;
+        private string mobo_bezeichnung;
 
-        public int Mobo_bezeichnung
+        public string Mobo_bezeichnung
         {
             get { return mobo_bezeichnung; }
             set { mobo_bezeichnung = value; }
         }
+
+        private string mobo_hersteller;
+
+        public string Mobo_hersteller
+        {
+            get { return mobo_hersteller; }
+            set { mobo_hersteller = value; }
+        }
+
 
         private int ram_slots;
 
@@ -44,6 +53,16 @@ namespace ConsoleApp1
         {
             get { return mobo_preis; }
             set { mobo_preis = value; }
+        }
+
+        public Motherboard(string mobo_bezeichnung, string mobo_hersteller, bool m2_slots, int ram_slots, bool dualchannel_sup, double mobo_preis)
+        {
+            this.mobo_bezeichnung = mobo_bezeichnung;
+            this.mobo_hersteller = mobo_hersteller;
+            this.m2_slots = m2_slots;
+            this.ram_slots = ram_slots;
+            this.dualchannel_sup = dualchannel_sup;
+            this.mobo_preis = mobo_preis;
         }
     }
 }

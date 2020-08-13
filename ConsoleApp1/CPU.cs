@@ -37,5 +37,14 @@ namespace ConsoleApp1
             get { return cpu_preis; }
             set { cpu_preis = value; }
         }
+        
+        public CPU(string cpu_bezeichnung, string cpu_chipbezeichnung, string cpu_hersteller, double cpu_preis)
+        {
+            this.cpu_bezeichnung = cpu_bezeichnung;
+            this.cpu_chipbezeichnung = cpu_chipbezeichnung;
+            this.cpu_hersteller = cpu_hersteller;
+            this.cpu_preis = cpu_preis;
+        }
+
     }
 }

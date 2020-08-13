@@ -37,5 +37,13 @@ namespace ConsoleApp1
             get { return speicher_preis; }
             set { speicher_preis = value; }
         }
+
+        public Speicher(string speicher_bezeichnung, int speicher_groesse, string speicher_art, double speicher_preis)
+        {
+            this.speicher_bezeichnung = speicher_bezeichnung;
+            this.speicher_groesse = speicher_groesse;
+            this.speicher_art = speicher_art;
+            this.speicher_preis = speicher_preis;
+        }
     }
 }
